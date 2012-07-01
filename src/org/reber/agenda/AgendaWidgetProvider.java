@@ -88,7 +88,7 @@ public class AgendaWidgetProvider extends AppWidgetProvider {
 			updateAppWidget(context, appWidgetManager, appWidgetId, 0);
 
 			if (!ids.contains(new Integer(appWidgetId))) {
-				AgendaConfigure.setAlarm(context, appWidgetId);
+				AgendaWidgetConfigure.setAlarm(context, appWidgetId);
 			}
 		}
 	}
@@ -290,7 +290,7 @@ public class AgendaWidgetProvider extends AppWidgetProvider {
 			}
 
 			// When the widget is disabled, we want to remove the update alarm
-			AgendaConfigure.cancelAlarm(context, appWidgetId);
+			AgendaWidgetConfigure.cancelAlarm(context, appWidgetId);
 		}
 	}
 
